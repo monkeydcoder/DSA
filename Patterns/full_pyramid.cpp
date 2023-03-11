@@ -23,7 +23,7 @@ int main()
     cin >> num_row;
     for (int row = 0; row < num_row; row++)
     {
-        for (int col = 0; col < num_row - row; col++)
+        for (int col = 0; col < num_row - row -1; col++)
         {
             cout << " ";
         }
