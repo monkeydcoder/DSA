@@ -37,6 +37,9 @@ int main()
         {
             if(arr1[i] == arr2[j])
             {
+                /* Marking the found element since it is possible that same element will be there again in same array
+                eg - 1,2,3,1 */
+                arr2[j] = -1;
                 ans.push_back(arr1[i]);
             }
         }
