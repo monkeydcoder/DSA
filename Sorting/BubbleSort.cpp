@@ -10,12 +10,18 @@ void Bubble_Sort(vector<int>arr)
     int end = arr.size() - 1;
     for(int round = 1; round <arr.size(); round++)
     {
+        bool swapped = false;
         for(int j = round + 1; j < arr.size() - round; j++)
         {
             if(arr[j] > arr[j+1])
             {
+                swapped = true;
                 swap(arr[j], arr[j + 1]);
             }
+        }
+        if(swapped == false)
+        {
+            break;
         }
     }
 
